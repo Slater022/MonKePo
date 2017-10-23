@@ -32,10 +32,10 @@ public class CombatTrigger : MonoBehaviour {
         if (!isTriggered) {
             isTriggered = true;
             Debug.Log("combat!");
-            if (SceneManager.GetActiveScene().name == "LevelTest2") {
+            if (SceneManager.GetActiveScene().name == "Battle") {
                 SceneManager.LoadScene("LevelTest", LoadSceneMode.Single);
             } else {
-                SceneManager.LoadScene("LevelTest2", LoadSceneMode.Single);
+                SceneManager.LoadScene("Battle", LoadSceneMode.Single);
             }
 
         }
